@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from 'next-themes'
-import { Sidebar } from './components/Sidebar'
+import Sidebar from './components/Sidebar'
 import { Header } from './components/Header'
 import { Dashboard } from './pages/Dashboard'
 import { Websites } from './pages/Websites'
