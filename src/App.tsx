@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar'
 import { Header } from './components/Header'
 import { Dashboard } from './pages/Dashboard'
 import { Websites } from './pages/Websites'
+import { PHPSettings } from './pages/PHPSettings'
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -24,6 +25,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/websites" element={<Websites />} />
+                <Route path="/php-settings" element={<PHPSettings />} />
               </Routes>
             </main>
           </div>

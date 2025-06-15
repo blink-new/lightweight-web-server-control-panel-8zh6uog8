@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Globe } from 'lucide-react';
+import { LayoutDashboard, Globe, Settings2 } from 'lucide-react';
 
 const Sidebar: React.FC = () => {
   const navItems = [
     { name: 'Dashboard', path: '/', icon: LayoutDashboard },
     { name: 'Websites', path: '/websites', icon: Globe },
+    { name: 'PHP Settings', path: '/php-settings', icon: Settings2 },
   ];
 
   return (
@@ -19,7 +20,7 @@ const Sidebar: React.FC = () => {
             <li key={item.name} className="mb-2">
               <NavLink
                 to={item.path}
-                end // Important for exact matching of '/'
+                end
                 className={({ isActive }) =>
                   `flex items-center p-2 rounded-md hover:bg-muted transition-colors ${
                     isActive ? 'bg-primary text-primary-foreground' : 'text-foreground'
